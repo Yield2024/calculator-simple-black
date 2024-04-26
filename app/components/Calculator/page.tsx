@@ -430,7 +430,7 @@ export default function Calculator() {
                         <div className={styles.main_right_header_info_earned} style={{marginBottom: '20px'}}>
                             <div
                                 className={styles.main_right_header_info_earned_number}
-                                style={{ color: "#71FFAA" }}
+                                style={{ color: "#71FFAA", fontFamily: 'helvetica' }}
 
                             >{`$ ${new Intl.NumberFormat("en-US").format(
                                 Number(calcEarned().interest.toFixed(0))
@@ -442,7 +442,7 @@ export default function Calculator() {
                         <div className={styles.main_right_header_info_balance}>
                             <div
                                 className={styles.main_right_header_info_balance_number}
-                                style={{ color: "#71FFAA" }}
+                                style={{ color: "#71FFAA", fontFamily: 'helvetica' }}
 
                             >{`$ ${new Intl.NumberFormat("en-US").format(
                                 Number(calcEarned().totalAmount.toFixed(0))
@@ -503,7 +503,8 @@ export default function Calculator() {
                         </div>
                         <div
                             className={styles.main_right_header_info_earned_number}
-                            style={{ marginTop: "20px", color: "#71FFAA" }}
+                            style={{ marginTop: "20px", color: "#71FFAA", fontFamily: 'helvetica' }}
+
                         >{`$ ${new Intl.NumberFormat("en-US").format(
                             Number(
                                 calcularInteresCompuestoReinversion(
