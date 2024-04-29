@@ -89,10 +89,17 @@
 	background-color: transparent !important;
 }
 
+@media screen and (min-width: 700px) and (max-width: 999px){
+	.calculator_main__xPXcy {
+		width: 500px !important;
+	max-width: 660px !important;
+	}
+}
+
 @media screen and (max-width: 767px){
 	.calculator_main__xPXcy {
-		width: 560px !important;
-	max-width: 600px !important;
+		width: 330px !important;
+	max-width: 360px !important;
 	}
 	
 }

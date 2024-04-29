@@ -306,10 +306,17 @@ a {
 	background-color: transparent !important;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 700px) and (max-width: 999px){
 	.calculator_main__xPXcy {
-		width: 560px !important;
-    max-width: 600px !important;
+		width: 500px !important;
+	max-width: 660px !important;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.calculator_main__xPXcy {
+		width: 330px !important;
+    max-width: 360px !important;
 	}
 	
   }
