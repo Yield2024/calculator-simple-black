@@ -380,7 +380,7 @@ export default function Calculator() {
                                 data={terms}
                                 searchable={false}
                                 defaultValue={termState}
-                                style={{ width: "100%" }}
+                                style={{ width: "100%",fontFamily: 'helvetica' }}
                                 className={styles.input_group}
                                 onChange={(e) => {
                                     if (e !== null) {
@@ -430,7 +430,7 @@ export default function Calculator() {
                         <div className={styles.main_right_header_info_earned} style={{marginBottom: '20px'}}>
                             <div
                                 className={styles.main_right_header_info_earned_number}
-                                style={{ color: "#71FFAA", fontFamily: 'helvetica' }}
+                                style={{ color: "#71FFAA" }}
 
                             >{`$ ${new Intl.NumberFormat("en-US").format(
                                 Number(calcEarned().interest.toFixed(0))
@@ -442,7 +442,7 @@ export default function Calculator() {
                         <div className={styles.main_right_header_info_balance}>
                             <div
                                 className={styles.main_right_header_info_balance_number}
-                                style={{ color: "#71FFAA", fontFamily: 'helvetica' }}
+                                style={{ color: "#71FFAA" }}
 
                             >{`$ ${new Intl.NumberFormat("en-US").format(
                                 Number(calcEarned().totalAmount.toFixed(0))
@@ -467,7 +467,7 @@ export default function Calculator() {
                                         type="monotone"
                                         dataKey="value"
                                         stroke="white"
-                                        fill="#5BB7F1"
+                                        fill="#71FFAA"
                                         dot={{ r: 4, filter: "url(#glow)" }}
                                     />
                                     <defs>
@@ -503,7 +503,7 @@ export default function Calculator() {
                         </div>
                         <div
                             className={styles.main_right_header_info_earned_number}
-                            style={{ marginTop: "20px", color: "#71FFAA", fontFamily: 'helvetica' }}
+                            style={{ marginTop: "20px", color: "#71FFAA" }}
 
                         >{`$ ${new Intl.NumberFormat("en-US").format(
                             Number(
